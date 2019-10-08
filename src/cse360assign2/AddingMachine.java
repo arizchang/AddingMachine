@@ -1,30 +1,66 @@
+/********************************************************************
+Author: Ariz Chang
+Course: CSE 360
+Assignment: 2
+Description: This program can add and subtract numbers, as well as 
+return the total.
+********************************************************************/
+
 package cse360assign2;
 
-public class AddingMachine {
+public class AddingMachine 
+{
 
 	private int total;
+	private String history;
 	
-	public AddingMachine () {
-		total = 0;  // not needed - included for clarity
+	//constructor
+	public AddingMachine () 
+	{
+		total = 0;
+		history = total + "";
 	}
 	
-	public int getTotal () {
-		return 0;
+	//returns the total 
+	public int getTotal () 
+	{
+		return total;
 	}
 	
-	public void add (int value) {
+	//adds parameter to total
+	public void add (int value) 
+	{
+		total += value;
+		history += " + " + value;
+	}
+	
+	//subtracts parameter from total
+	public void subtract (int value) 
+	{
+		total -= value;
+		history += " - " + value;
+	}
 		
-	}
-	
-	public void subtract (int value) {
-		
-	}
-		
-	public String toString () {
-		return "";
+	//returns a String of operations performed
+	public String toString () 
+	{
+		return history;
 	}
 
-	public void clear() {
+	//clears total to 0
+	public void clear() 
+	{
+		total = 0;
+	}
 	
+	//main method executing the program
+	public static void main(String[] args)
+	{
+		AddingMachine machine = new AddingMachine(); //creating new AddingMachine object
+		
+		machine.add(4);
+		machine.subtract(2);
+		machine.add(5);
+		System.out.println(machine.toString());
 	}
 }
