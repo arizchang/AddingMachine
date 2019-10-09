@@ -51,6 +51,7 @@ public class AddingMachine
 	public void clear() 
 	{
 		total = 0;
+		history = total + "";
 	}
 	
 	//main method executing the program
