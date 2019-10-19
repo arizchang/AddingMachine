@@ -1,12 +1,12 @@
 /********************************************************************
 Author: Ariz Chang
 Course: CSE 360
-Assignment: 2
+Assignment: 3
 Description: This program can add and subtract numbers, as well as 
 return the total.
 ********************************************************************/
 
-package cse360assign2;
+package cse360assign3;
 
 public class AddingMachine 
 {
@@ -65,5 +65,14 @@ public class AddingMachine
 		machine.clear();
 		machine.add(6);
 		System.out.println(machine.toString());
+		
+		Calculator calc = new Calculator();
+		
+		calc.add(5);
+		calc.div(4);
+		calc.power(10);
+		calc.clear();
+		calc.subtract(30);
+		System.out.println(calc.toString());
 	}
 }

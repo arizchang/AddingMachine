@@ -6,7 +6,7 @@ Description: This class contains the main method used to create an
 AddingMachine object and test its methods.
 ********************************************************************/
 
-package cse360assign2;
+package cse360assign3;
 
 public class main 
 {
