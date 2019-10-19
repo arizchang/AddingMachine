@@ -11,8 +11,8 @@ package cse360assign2;
 public class AddingMachine 
 {
 
-	private int total;
-	private String history;
+	protected int total;
+	protected String history;
 	
 	//constructor
 	public AddingMachine () 
@@ -62,6 +62,8 @@ public class AddingMachine
 		machine.add(4);
 		machine.subtract(2);
 		machine.add(5);
+		machine.clear();
+		machine.add(6);
 		System.out.println(machine.toString());
 	}
 }
