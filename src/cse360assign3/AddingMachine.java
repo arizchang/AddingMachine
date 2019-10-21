@@ -73,6 +73,7 @@ public class AddingMachine
 		calc.power(10);
 		calc.clear();
 		calc.subtract(30);
+		calc.mult(12);
 		System.out.println(calc.toString());
 	}
 }
